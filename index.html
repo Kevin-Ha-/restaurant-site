@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Asia Restaurant Chinese Cuisine</title>
+<meta charset="utf-8">
+<meta name="viewport" content"width=device-width">
+<meta name="description" content="Asia chinese restaurant in San Antonio Texas">	
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href="asia.css" rel="stylesheet">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(function(){
+    $('#bin img:gt(0)').hide();
+    setInterval(function(){
+      $('#bin :first-child').fadeOut()
+         .next('img').fadeIn()
+         .end().appendTo('#bin');}, 
+      5000);
+});
+</script>
+</head>
+<body>
+<div id="container">
+<!-- start header-->
+	<div id="header">
+	<div class="section clearfix">
+		<div id="logo"><a href="." title="home" rel="home"><img src="images/logo.png" alt="logo" id="imgLogo"></a></div>
+		<div id="headerInfo">
+			<div id="topInfo">
+				<p>Phone: 210-680-7323</p> 
+				<p>Address: 8035 Culebra Rd</p>
+			</div>
+			<div id="bottomInfo">
+				<p>Mon-Thu: 11-9</p> 
+				<p>Fri: 11-9:30</p>
+				<p>Sat &amp; Sun: 11:30-9</p>
+			</div>
+		</div>
+	</div>
+	</div>
+<!-- end header--> <!--start navigation -->
+<div id="nav">
+	<ul id="main-menu" class="links clearfix">
+		<li><a href="." class="brackets">Home</a></li>
+		<li><a href="menu.html" class="brackets">Menu</a></li>
+		<li><a href="location.html" class="brackets">Location</a></li>
+	</ul>
+</div>
+<!--end navigation --> <!-- start body -->
+
+
+<div id="content">
+
+<hr class="redLine" />
+
+<img src="images/asia.png" alt="Asia Restaurant San Antonio" class="contentLogo">
+<p id="contentParagraph">
+Asia Restaurant is an independently family owned and operated restaurant located in San Antonio,TX. Our goal is to provide our customers with good hospitality and authentic chinese cuisine in a family friendly environment.
+Asia Restaurant has been in business for over 15 years, opening in the early 1980's. We offer some of the best chinese food in town and our restaurant offers many different lunch specials daily. Lunch begins at 11 am and runs until 4 pm. Take a look at our menu or visit us for more details.
+</p>
+
+<div id='bin'>
+  <img src="images/slide_1.jpg">
+  <img src="images/slide_2.jpg">
+  <img src="images/slide_3.jpg">
+  <img src="images/slide_4.jpg">
+</div>
+
+<hr class="redLine" id="redLineSpace" />
+<!-- end body --> <!-- start footer -->
+</div>
+<div id="footer">
+<p id="footerText">&copy; Asia Chinese Restaurant</p>
+</div>
+<!-- end page -->
+</div>
+</body>
+</html>
